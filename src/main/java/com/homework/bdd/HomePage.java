@@ -10,6 +10,9 @@ public class HomePage extends DriverManager{
     public void doSearch(){
         driver.findElement(By.id("search")).sendKeys("bag");
         driver.findElement(By.className("submit-btn")).click();
+    }
 
+    public String isOnHomePage(){
+       return driver.getCurrentUrl();
     }
 }
