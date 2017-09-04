@@ -15,4 +15,11 @@ public class HomePage extends DriverManager{
     public String isOnHomePage(){
        return driver.getCurrentUrl();
     }
+
+    public void logIn(){
+        driver. findElement(By.className("user_account")).click();
+        driver.findElement(By.id("login_email")).sendKeys("miteshshrimanker@gmail.com");
+        driver.findElement(By.id("password")).sendKeys("testing123");
+        driver.findElement(By.id("login_submit")).click();
+    }
 }
