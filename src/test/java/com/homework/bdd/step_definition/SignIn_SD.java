@@ -18,11 +18,12 @@ public class SignIn_SD {
     @Given("^I click on \"([^\"]*)\" icon$")
     public void i_click_on_icon(String arg1) {
         homePage.isOnHomePage();
+        homePage.selectLogIn();
     }
 
     @When("^I enter my username and password$")
     public void i_enter_my_username_and_password() {
-        homePage.logIn();
+        logInPage.enterCredentials();
     }
 
     @Then("^I am able to see my Account$")

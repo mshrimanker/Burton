@@ -6,6 +6,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+
 /**
  * Created by Kajal on 03/09/2017.
  */
@@ -16,7 +17,6 @@ public class Search_SD {
     @Given("^I am on homepage$")
     public void i_am_on_homepage() {
         homePage.isOnHomePage();
-
     }
 
     @When("^I search for \"([^\"]*)\"$")
@@ -27,6 +27,6 @@ public class Search_SD {
     @Then("^I should see respective \"([^\"]*)\" products\\.$")
     public void i_should_see_respective_products(String arg1) {
         resultsPage.isRelatedProductsShow();
-    }
 
+    }
 }

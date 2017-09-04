@@ -15,7 +15,7 @@ public class DriverManager {
         driver = new FirefoxDriver();
     }
     public void navigateTo(){
-        driver.get("https://www.burton.com/uk/en/home#");
+        driver.get("http://www.burton.co.uk/");
     }
     public void maximise() {
         driver.manage().window().maximize();
