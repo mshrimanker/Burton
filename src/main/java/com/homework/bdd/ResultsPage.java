@@ -8,13 +8,13 @@ import org.openqa.selenium.By;
  */
 public class ResultsPage extends DriverManager {
 
-    public void isRelatedProductsShow(){
-        String actual = driver.findElement(By.xpath("html/body/div[2]/div[3]/div/div[1]/div/h1")).getText();
-
+    public String isOnAccountPage() {
+        String actual = driver.findElement(By.className("replace")).getText();
+        return actual;
     }
 
-    public String isOnAccountPage(){
-        String actual = driver.findElement(By.className("replace")).getText();
+    public String viewBasketPage() {
+        String actual = driver.findElement(By.xpath("html/body/div[2]/div[3]/div/div[2]/div[1]/h1")).getText();
         return actual;
     }
 }
