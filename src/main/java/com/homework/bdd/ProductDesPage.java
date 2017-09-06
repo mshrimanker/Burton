@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 public class ProductDesPage extends DriverManager {
 
     public void selectShoeSize(){
-        driver.findElement(By.xpath("html/body/div[2]/div[3]/div[2]/div[1]/div[2]/div[3]/form/fieldset/div[1]/div[3]/div/label[4]")).click();
+        driver.findElement(By.cssSelector(".btn.active")).click();
     }
 
     public void selectQuantity(){

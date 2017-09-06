@@ -11,8 +11,9 @@ import org.openqa.selenium.By;
  */
 public class SearchResultsPage extends DriverManager {
 
-    public void isRelatedProductsShow() {
+    public String isRelatedProductsShow() {
         String actual = driver.findElement(By.xpath("html/body/div[2]/div[3]/div/div[1]/div/h1")).getText();
+        return actual;
     }
 
     public void selectProduct() {

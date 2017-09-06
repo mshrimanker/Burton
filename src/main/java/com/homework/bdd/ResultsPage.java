@@ -17,4 +17,9 @@ public class ResultsPage extends DriverManager {
         String actual = driver.findElement(By.xpath("html/body/div[2]/div[3]/div/div[2]/div[1]/h1")).getText();
         return actual;
     }
+
+    public String updatedBasket(){
+        String actual = driver.findElement(By.className("server_message")).getText();
+        return actual;
+    }
 }
